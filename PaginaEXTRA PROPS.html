@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>EXTRA PROPS</title>
+   <link rel="website icon" type="png" href="Imagenes/Andres Sola.jpg">
+   <link href="CSS/DiseñoArtWorks.css" rel="stylesheet">
+</head>
+<body>
+   <section class="Alerta_WIP">
+      Warning: This website is in progress
+    </section>
+  
+    <section class="Contenido_Grupo">
+      <h1>EXTRA PROPS</h1>
+      <h2>aaaaaaaaaaaaaaaa</h2>
+      <section class="Contenido_Programas">
+        <div class="Programa_1"></div>
+        <div class="Programa_2"></div>
+        <div class="Programa_3"></div>
+        <div class="Programa_6"></div>
+     </section>
+   </section>
+   
+   </section>
+  
+     <section class="Contenido_Grupo">
+        <h3>PROPS</h3>
+        <ul class="GR_Artkork_Standar">
+          
+          <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+            <source src="CSS/Imagenes/Trompeta texturas.mov" type="video/mp4"> 
+            Your browser does not support the video tag.
+           </video>
+           
+           <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+             <source src="CSS/Imagenes/Martillo.mp4" type="video/mp4"> 
+             Your browser does not support the video tag.
+            </video>
+
+            <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+              <source src="CSS/Imagenes/Zepillo barbero.mp4" type="video/mp4"> 
+              Your browser does not support the video tag.
+             </video>
+
+             <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+              <source src="CSS/Imagenes/Metro.mp4" type="video/mp4"> 
+              Your browser does not support the video tag.
+             </video>
+
+             <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+              <source src="CSS/Imagenes/BOCA DE INCENDIOS.mp4" type="video/mp4"> 
+             </video>
+
+             <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+              <source src="CSS/Imagenes/Buzon 1.mp4" type="video/mp4"> 
+             </video>
+
+             <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+              <source src="CSS/Imagenes/Buzon 2.mp4" type="video/mp4"> 
+             </video>
+
+             <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+              <source src="CSS/Imagenes/Secados.mp4" type="video/mp4"> 
+             </video>
+
+             <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+              <source src="CSS/Imagenes/Carro de compra.mp4" type="video/mp4"> 
+             </video>
+
+             <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+              <source src="CSS/Imagenes/Escalera.mp4" type="video/mp4"> 
+             </video>
+        </ul>
+       
+      </section >
+
+    <section class="Contenido_Grupo">
+      <h4>More proyects:
+        <a href="/PaginaMain.html">Andres.com</a>
+      </h4>
+    </section>
+
+    <div id="overlay"></div>
+
+    <section class="Contenido_Programas">
+      <h2>Artwork made by Andrés Sola Arróniz</h2>
+      <img src="CSS/Imagenes/Andres Sola.jpg" class="AS">
+    </section>
+
+    <script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('.clickable-image');
+      const overlay = document.getElementById('overlay');
+  
+      images.forEach(image => {
+          image.addEventListener('click', function() {
+              const clone = image.cloneNode();
+              overlay.innerHTML = '';
+              overlay.appendChild(clone);
+              overlay.style.display = 'flex';
+          });
+      });
+  
+      overlay.addEventListener('click', function() {
+          overlay.style.display = 'none';
+      });
+  });
+  
+      </script>
+   
+</body>
+</html>

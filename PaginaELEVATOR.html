@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ARIMA LODGE</title>
+   <link rel="website icon" type="png" href="Imagenes/Andres Sola.jpg">
+   <link href="CSS/DiseñoArtWorks.css" rel="stylesheet">
+</head>
+<body>
+   <section class="Alerta_WIP">
+      Warning: This website is in progress
+    </section>
+  
+    <section class="Contenido_Grupo">
+      <h1>ARIMA LODGE</h1>
+      <h2>aaaaaaaaaaaaaaaa</h2>
+      <section class="Contenido_Programas">
+        <div class="Programa_1"></div>
+        <div class="Programa_2"></div>
+        <div class="Programa_3"></div>
+        <div class="Programa_4"></div>
+     </section>
+   </section>
+
+     <section class="Contenido_Grupo">
+        <h3>ELEVATOR</h3>
+        <ul class="GR_Artkork_Standar">
+          <img src="CSS/Imagenes/ElevatorConcept4.jpg" alt="Imagen 1" class="clickable-image">
+
+          <a href="https://praenaris.itch.io/arima-lodge"><img src="CSS/Imagenes/Play elevator.JPG" class="Artwork_Video"></a>
+
+          <img src="CSS/Imagenes/ELEVATOR1.JPG" alt="Imagen 1" class="clickable-image">
+          <img src="CSS/Imagenes/ELEVATORCREDITS.JPG" alt="Imagen 1" class="clickable-image">
+          
+        </ul>
+      </section >
+  
+        <div id="overlay"></div>
+  
+        <section class="Contenido_Grupo">
+         <h4>More proyects:
+           <a href="/PaginaMain.html">Andres.com</a>
+         </h4>
+       </section>
+  
+      <section class="Contenido_Programas">
+        <h2>Artwork made by Andrés Sola Arróniz</h2>
+        <img src="CSS/Imagenes/Andres Sola.jpg" class="AS">
+  
+      </section>
+  
+      <script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('.clickable-image');
+      const overlay = document.getElementById('overlay');
+  
+      images.forEach(image => {
+          image.addEventListener('click', function() {
+              const clone = image.cloneNode();
+              overlay.innerHTML = '';
+              overlay.appendChild(clone);
+              overlay.style.display = 'flex';
+          });
+      });
+  
+      overlay.addEventListener('click', function() {
+          overlay.style.display = 'none';
+      });
+  });
+  
+      </script>
+</body>
+</html>

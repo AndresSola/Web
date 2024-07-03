@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MILLENIUM_FALCOM</title>
+   <link rel="website icon" type="png" href="Imagenes/Andres Sola.jpg">
+   <link href="CSS/DiseñoArtWorks.css" rel="stylesheet">
+</head>
+<body>
+   <section class="Alerta_WIP">
+      Warning: This website is in progress
+    </section>
+  
+    <section class="Contenido_Grupo">
+      <h1>MILLENIUM_FALCOM</h1>
+      <h2>aaaaaaaaaaaaaaaa</h2>
+      <section class="Contenido_Programas">
+        <div class="Programa_1"></div>
+        <div class="Programa_2"></div>
+        <div class="Programa_3"></div>
+        <div class="Programa_7"></div>
+     </section>
+   </section>
+  
+   </section>
+     
+     <section class="Contenido_Grupo">
+        <h3>TURNAROUNDS</h3>  
+        <ul class="GR_Artkork_Big">
+         <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+         <source src="CSS/Imagenes/Halcon milenario Generacion.mp4" type="video/mp4"></video>
+        </ul>
+
+        <ul class="GR_Artkork_Standar">
+         <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+         <source src="CSS/Imagenes/Halcon milenario turaround textured.mp4" type="video/mp4"></video>
+
+         <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+            <source src="CSS/Imagenes/Halcon milenario turaround Base.mp4" type="video/mp4"></video>
+
+         <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+            <source src="CSS/Imagenes/Halcon milenario turaround Wireframe.mp4" type="video/mp4"></video>
+
+         <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+            <source src="CSS/Imagenes/Halcon milenario Plano 1 adelante.mov" type="video/mp4"></video>
+
+          <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+            <source src="CSS/Imagenes/Halcon milenario Plano 2 Cabina int.mp4" type="video/mp4"></video>
+
+          <video class="Artwork_Video" controls  loop muted alt="Imagen 1">
+            <source src="CSS/Imagenes/Halcon milenario Plano 3 Puerta.mp4" type="video/mp4"></video>
+
+          <img src="CSS/Imagenes/wip FINAL 1.jpg" class="clickable-image">
+          <img src="CSS/Imagenes/wip FINAL 2.jpg" class="clickable-image">
+          <img src="CSS/Imagenes/wip FINAL 3.jpg" class="clickable-image">
+
+        </ul>
+      </section >
+  
+      <div id="overlay"></div>
+  
+      <section class="Contenido_Grupo">
+         <h4>More proyects:
+           <a href="/PaginaMain.html">Andres.com</a>
+         </h4>
+       </section>
+
+      <section class="Contenido_Programas">
+        <h2>Artwork made by Andrés Sola Arróniz</h2>
+        <img src="CSS/Imagenes/Andres Sola.jpg" class="AS">
+
+      </section>
+
+      <script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('.clickable-image');
+      const overlay = document.getElementById('overlay');
+  
+      images.forEach(image => {
+          image.addEventListener('click', function() {
+              const clone = image.cloneNode();
+              overlay.innerHTML = '';
+              overlay.appendChild(clone);
+              overlay.style.display = 'flex';
+          });
+      });
+  
+      overlay.addEventListener('click', function() {
+          overlay.style.display = 'none';
+      });
+  });
+  
+      </script>
+   
+</body>
+</html>

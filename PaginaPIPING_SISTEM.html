@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PIPING SISTEM</title>
+   <link rel="website icon" type="png" href="Imagenes/Andres Sola.jpg">
+   <link href="CSS/DiseñoArtWorks.css" rel="stylesheet">
+</head>
+<body>
+   <section class="Alerta_WIP">
+      Warning: This website is in progress
+    </section>
+  
+    <section class="Contenido_Grupo">
+      <h1>PIPING SISTEM</h1>
+      <h2>aaaaaaaaaaaaaaaa</h2>
+      <section class="Contenido_Programas">
+        <div class="Programa_1"></div>
+        <div class="Programa_3"></div>
+     </section>
+   </section>
+   
+   </section>
+     <section class="Contenido_Grupo">
+        <h3>PIPING SISTEM</h3>
+        <ul class="GR_Artkork_Standar">
+        <img src="CSS/Imagenes/Art maquetasao7.jpg" alt="Imagen 1" class="clickable-image">
+        <img src="CSS/Imagenes/Art maquetasao9.jpg" class="clickable-image">
+        </ul>
+     </section>
+  
+     <section class="Contenido_Grupo">
+        <h3>PIPING SYSTEM CREATION PROCESS </h3>
+        <ul class="GR_Artkork_Standar">
+         <img src="CSS/Imagenes/Art maquetasao8.jpg" class="clickable-image">
+         <img src="CSS/Imagenes/Art maquetasao3.jpg" class="clickable-image">
+         <img src="CSS/Imagenes/Art maquetasao2.jpg" class="clickable-image">
+         <img src="CSS/Imagenes/Art maquetasao4.jpg" class="clickable-image">
+         <img src="CSS/Imagenes/Art maquetasao5.jpg" class="clickable-image">
+         <img src="CSS/Imagenes/Art maquetasao6.jpg" class="clickable-image">
+         <img src="CSS/Imagenes/Art maquetasao7.jpg" class="clickable-image">
+         <img src="CSS/Imagenes/Art maquetasao9.jpg" class="clickable-image">
+        </ul>
+      </section >
+  
+     
+  
+      <section class="Contenido_Grupo">
+        <h4>More proyects:
+          <a href="/PaginaMain.html">Andres.com</a>
+        </h4>
+      </section>
+  
+      <section class="Contenido_Programas">
+        <h2>Artwork made by Andrés Sola Arróniz</h2>
+        <img src="CSS/Imagenes/Andres Sola.jpg" class="AS">
+      </section>
+  
+      <script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+      const images = document.querySelectorAll('.clickable-image');
+      const overlay = document.getElementById('overlay');
+  
+      images.forEach(image => {
+          image.addEventListener('click', function() {
+              const clone = image.cloneNode();
+              overlay.innerHTML = '';
+              overlay.appendChild(clone);
+              overlay.style.display = 'flex';
+          });
+      });
+  
+      overlay.addEventListener('click', function() {
+          overlay.style.display = 'none';
+      });
+  });
+  
+      </script>
+   
+</body>
+</html>
